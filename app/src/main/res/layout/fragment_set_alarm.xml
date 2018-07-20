@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    tools:context=".UI.SetAlarmFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Set The Alarm"
+            android:textColor="@android:color/white"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:text="Please select the radius range in meters" />
+
+            <com.xw.repo.BubbleSeekBar
+                android:id="@+id/radius_seekbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fancy:bsb_auto_adjust_section_mark="true"
+                fancy:bsb_bubble_color="@color/colorAccent"
+                fancy:bsb_max="1000"
+                fancy:bsb_min="100"
+                fancy:bsb_progress="100"
+                fancy:bsb_section_count="10"
+                fancy:bsb_section_text_position="bottom_sides"
+                fancy:bsb_show_section_mark="true"
+                fancy:bsb_show_section_text="true"
+                fancy:bsb_show_thumb_text="true" />
+        </LinearLayout>
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/set_alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            fancy:fb_borderColor="#FFFFFF"
+            fancy:fb_borderWidth="1dp"
+            fancy:fb_radius="5dp"
+            fancy:fb_text="Set Alarm"
+            fancy:fb_textColor="#FFFFFF">
+
+        </mehdi.sakout.fancybuttons.FancyButton>
+
+    </LinearLayout>
+
+</LinearLayout>
